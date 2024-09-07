@@ -37,26 +37,26 @@ tagsElement.current.value=""
     <form className="create-post" onSubmit={handleSubmit}>
       <div className="mb-3">
         <label htmlFor="userId" className="form-label">Enter your UserId here</label>
-        <input type="text" ref={userIdElement} value="uxer" placeholder="Your User Id here" className="form-control" id="userId"/>
+        <input type="text" ref={userIdElement} placeholder="Your User Id here" className="form-control" id="userId"/>
       </div>
       <div className="mb-3">
         <label htmlFor="title" className="form-label">Post Title</label>
-        <input type="text" ref={postTitleElement} value="uxer=1" placeholder="how are yoy feeling today..." className="form-control" id="title"/>
+        <input type="text" ref={postTitleElement}  placeholder="how are yoy feeling today..." className="form-control" id="title"/>
       </div>
       
       <div className="mb-3">
         <label htmlFor="body"  className="form-label">Post Content</label>
-        <textarea type="text" ref={postBodyElement} rows="4" value="uxer123" placeholder="Tell us more about it." className="form-control" id="body"/>
+        <textarea type="text" ref={postBodyElement} rows="4"  placeholder="Tell us more about it." className="form-control" id="body"/>
       </div>
 
       <div className="mb-3">
         <label htmlFor="reactions" className="form-label">Number of Reactions</label>
-        <input type="text" ref={reactionsElement}  value="uxeref" placeholder="how many people reacted to this post" className="form-control" id="reactions"/>
+        <input type="text" ref={reactionsElement}   placeholder="how many people reacted to this post" className="form-control" id="reactions"/>
       </div>
 
       <div className="mb-3">
         <label htmlFor="tags" className="form-label">Enter Your HashTags here</label>
-        <input type="text" ref={tagsElement} value="ujrwgin" placeholder="Please enter tags using space" className="form-control" id="tags"/>
+        <input type="text" ref={tagsElement} placeholder="Please enter tags using space" className="form-control" id="tags"/>
       </div>
       
       
