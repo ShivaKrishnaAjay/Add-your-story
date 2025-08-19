@@ -13,17 +13,21 @@ const [selectedTab,setSelectedTab]=useState("Home")
 
   return (
     <PostListProvider>
-    <div className="app-container">
-    <Sidebar selectedTab={selectedTab} setSelectedTab={setSelectedTab}></Sidebar>
-    <div className='container'>
-<Header></Header>
-{selectedTab==="Home" ? (<PostList ></PostList>
-):(<CreatePost setSelectedTab={setSelectedTab}></CreatePost>)}
-  
-<Footer></Footer> 
-    </div>
- </div>
- </PostListProvider>
+      <div className="app-container">
+        <Sidebar selectedTab={selectedTab} setSelectedTab={setSelectedTab} />
+        <div className="main-content">
+          <Header className="header" />
+          <div className="container">
+            {selectedTab === "Home" ? (
+              <PostList />
+            ) : (
+              <CreatePost setSelectedTab={setSelectedTab} />
+            )}
+          </div>
+          <Footer className="footer" />
+        </div>
+      </div>
+    </PostListProvider>
   )
 }
 
